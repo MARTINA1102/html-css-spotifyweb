@@ -5,27 +5,70 @@
 }
 
 .navigation{
-    width: 150px;
+    width: 50px;
     height: calc(100vh - 70px);
-    background-color: red;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: grey;
 }
 .logo{
-    margin: .5rem;
+    display: none;
 }
-
+.lil-logo{
+    width: 50px;
+    padding: .3rem;
+}
+.testo-ico{
+    display: none;
+}
 .ico{
-    width: 40px;
+    width: 35px;
+    padding: .3rem;
+}
+.installa{
+    width: 30px;
     padding: .5rem;
+
+}
+.installa-app{
+    border-bottom: 1px solid grey;
+}
+.profile{
+    width: 35px;
+    height: 35px;
+    background-color: grey;
+    border-radius: 50%;
+    margin: .5rem;
+
+}
+.profile-text{
+    font-weight: bold;
+    color: white;
 }
 .icon{
     font-size: 40px;
     padding: .5rem;
 }
+.icon-play{
+    font-size: 40px;
+    padding: .3rem .5rem;
+    color: grey;
+}
 .playlist{
     font-weight: bold;
+    color: white;
 }
 .play{
-    padding: .2rem .5rem;
+    padding-top: 1rem;
+    padding-left: .5rem;
+    padding-right: .5rem;   
+}
+.play-1{
+    padding-left: .5rem;
+    padding-right: .5rem;   
+
 }
 
 .menu{
@@ -33,17 +76,97 @@
     flex-wrap: nowrap;
     align-items: center;
 }
-
 .main{
-    width: calc(100vw - 150px);
+    width: calc(100vw - 50px);
     height: calc(100vh - 120px);
     overflow-y: scroll;
     position: fixed;
     top: 50px;
     right:0;
+    background-color:rgb(28, 28, 43) ;
 }
+
+.cont-genere{
+    font-size: .5rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+.genere{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.genere li{
+    color: lightgray;
+    list-style: none;
+    font-size: 0.5rem;
+    flex: 1 1 20%;
+}
+h2{
+    color: white;
+}
+.recently,.doe{
+    margin:2rem 1rem;
+}
+
+.brani-square{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+    text-align: center;
+    gap: 1rem;
+    margin-top: 3rem;
+
+}
+
+.square-1{
+    color: white;
+    font-size: .8rem;
+    flex: 1 1 20%;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+.square-img{
+    width: 150px;
+}
+.square-img img{
+    width: 100%;
+}
+
+.brani-square-2{
+    display: flex;
+    justify-content: left;
+    align-items: baseline;
+    gap: 1rem;
+    margin-top: 3rem;
+}
+
+.square-2{
+    color: white;
+    font-size: .8rem;
+    flex: 0 1 15%;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+
+}
+
+.sottotitolo1{
+    color: grey;
+}
+
+
+
+
+
 .pubb{
-    width: calc(100vw - 150px);
+    width: calc(100vw - 50px);
     height: 50px;
     position: fixed;
     top: 0;
@@ -51,9 +174,252 @@
     background-color: blue;
 }
 
+
+
+
+
+
+
+
+
+
 .footer{
     width: 100vw;
     height: 70px;
-    background-color: yellow;
+    background-color: grey;
+    color: white;
+}
 
+.left-foot{
+    display: flex;
+    align-items: center;
+    flex: 0 1 30%;
+}
+.sottotitolo{
+    color: lightgray;
+}
+
+.sinister{
+    flex: 0 0 70px;
+    padding: .5rem;
+}
+.img-sinister{
+    width: 100%;
+}
+.icons-foot{
+    flex-shrink: 1;
+}
+.icons{
+    margin: .3rem;
+    flex-shrink: 1;
+
+
+}
+
+.icons-2{
+    margin: .1rem;
+    color: lightgrey;
+}
+
+.icons-foot-center{
+    display: flex;
+    text-align: center;
+    flex-shrink: 1;
+
+}
+.icons-1{
+    margin: .3rem;
+    flex:0 1 25%;
+}
+.sound-bar{
+    flex-shrink: 1;
+}
+.text-bar{
+    flex: 0 1 1rem;
+}
+.bar{
+    border-bottom: 3px solid lightgray;
+    width: 50px;
+    margin:0 .5em;
+}
+.center-foot{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 0 1 30%;
+}
+.sound-bar{
+    flex-shrink: 1;
+}
+.foot{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lil-bar{
+    border-top: 3px solid lightgrey;
+    width: 20px;
+    margin: 0 .3em;
+    flex-shrink: 1;
+
+
+}
+
+.name{
+    font-size: .8rem;
+    margin-right:1rem;
+
+    
+}
+
+.right-foot{
+    display: flex;
+    flex: 0 1 30%;
+    justify-content: flex-end;
+
+}
+
+@media (min-width: 639px){
+    .navigation{
+        width: 180px;
+        height: calc(100vh - 70px);
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        color: grey;
+    }
+    .logo{
+        display: block;
+        width: 100px;
+        margin: .5rem;
+    }
+    .testo-ico{
+        display: block;
+    }
+    .lil-logo{
+        display: none;
+    }
+    
+    .ico{
+        width: 35px;
+        padding: .3rem;
+    }
+    .installa{
+        width: 30px;
+        padding: .5rem;
+    
+    }
+    .installa-app{
+        border-bottom: 1px solid grey;
+    }
+    .profile{
+        width: 35px;
+        height: 35px;
+        background-color: grey;
+        border-radius: 50%;
+        margin: .5rem;
+    
+    }
+    .profile-text{
+        font-weight: bold;
+        color: white;
+    }
+    .icon{
+        font-size: 40px;
+        padding: .5rem;
+    }
+    .icon-play{
+        font-size: 40px;
+        padding: .3rem .5rem;
+        color: grey;
+    }
+    .playlist{
+        font-weight: bold;
+        color: white;
+    }
+    .play{
+        padding-top: 1rem;
+        padding-left: .5rem;
+        padding-right: .5rem;   
+    }
+    .play-1{
+        padding-left: .5rem;
+        padding-right: .5rem;   
+    
+    }
+    
+    .menu{
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    
+    .main{
+        width: calc(100vw - 180px);
+        height: calc(100vh - 120px);
+        overflow-y: scroll;
+        position: fixed;
+        top: 50px;
+        right:0;
+    }
+
+    .genere li{
+        flex: 1 1 30%;
+    }
+    .square-1{
+        flex: 1 1 48%
+    }
+    .pubb{
+        width: calc(100vw - 180px);
+        height: 50px;
+        position: fixed;
+        top: 0;
+        right: 0;
+        background-color: blue;
+    }
+    
+    .footer{
+        width: 100vw;
+        height: 70px;
+    
+    
+    }
+   
+    
+
+}
+
+@media (min-width: 878px){
+    .icons-foot{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .genere li{
+        flex: 1 1 15%;
+    }
+    
+    .square-1{
+        flex: 0 1 20%;
+    }
+    .brani-square{
+        justify-content: left;
+    }
+}
+    
+
+@media (min-width:1200px) {
+    
+    .genere li{
+        flex: 1 1 1%;
+    }
+    
+    .square-1{
+        flex: 1 1 1%;
+    }
+   
+    
 }

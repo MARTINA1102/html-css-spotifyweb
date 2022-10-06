@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Spotify</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
@@ -14,25 +14,26 @@
     <nav class="navigation">
         <div class="conteiner">
             <img class="logo" src="img/logo.svg" alt="">
+            <img class="lil-logo" src="img/logo-small.svg" alt="">
             <div class="menu">
                 <img class="ico" src="img/home.svg" alt=""> 
-                <div>Home</div>
+                <div class="testo-ico">Home</div>
             </div>
             <div class="menu">
                 <img class="ico" src="img/search.svg" alt=""> 
-                <div>Cerca</div>
+                <div class="testo-ico">Cerca</div>
              </div>
             <div class="menu">
                 <img class="ico" src="img/libreria.svg" alt=""> 
-                <div>La tua libreria</div>          
+                <div class="testo-ico">La tua libreria</div>          
             </div>
-            <div class="play playlist">PLAYLIST</div>
+            <div class="play playlist testo-ico">PLAYLIST</div>
             <div class="menu">
-                <div class="icon"><i class="fa-solid fa-square-plus"></i></div> 
-                <div>Crea Playlist</div>          
+                <div class="icon-play testo-ico"><i class="fa-solid fa-square-plus"></i></div> 
+                <div class="testo-ico">Crea Playlist</div>          
             </div>
-            <ul>
-                <li class="play" >Nome Playlist</li>
+            <ul class="testo-ico">
+                <li class="play-1" >Nome Playlist</li>
                 <li class="play" >Nome Playlist</li>
                 <li class="play" >Nome Playlist</li>
                 <li class="play" >Nome Playlist</li>
@@ -41,14 +42,14 @@
                 <li class="play" >Nome Playlist</li>   
             </ul>    
         </div>
-        <div>
-            <div class="menu">
-                <img class="ico" src="img/download.svg" alt=""> 
-                <div>Installa app</div>
+        <div class="container">
+            <div class="menu installa-app">
+                <img class="installa" src="img/download.svg" alt=""> 
+                <div class="testo-ico">Installa app</div>
             </div>
             <div class="menu">
-                <img class="ico" src="img/profile.svg" alt=""> 
-                <div>John Doe</div>
+                <img class="profile" src="img/profile.svg" alt=""> 
+                <div class="profile-text testo-ico">John Doe</div>
             </div>
         </div>
             
@@ -59,13 +60,106 @@
     <section class="pubb">dolorum unde?</section>
 
     <main class="main">
+        <div class="cont-genere">
+            <ul class="genere">
+                <li>IN EVIDENZA</li>
+                <li>PODCAST</li>
+                <li>CLASSIFICHE</li>
+                <li>GENERI E MOOD</li>
+                <li>NUOVE USCITE</li>
+                <li>SCOPRI</li>
+            </ul>
+        </div>
+        <section>
+            <h2 class="recently">Recently played</h2>
+            <div class="brani-square">
+                <div class="square-1">
+                    <div class="square-img"><img src="img/metal_lifting.jpg" alt=""></div>
+                    <h3>Heavy Metal</h3>
+                    <div class="sottotitolo1">Subtitle</div>
+                </div>
+                <div class="square-1">
+                    <div class="square-img"><img src="img/stranger.jpeg" alt=""></div>
+                    <h3>Stanger Things, Vol.1 (a Netflix Original Series Soundtrack)</h3>
+                    <div class="sottotitolo1">Kyle Dixon & Michael Stein</div>
+                </div>
+                <div class="square-1">
+                    <div class="square-img"><img src="img/aquietplace.jpeg" alt=""></div>
+                    <h3>A quiet place</h3>
+                    <div class="sottotitolo1">Subtitle</div>
+                </div>
+                <div class="square-1">
+                    <div class="square-img"><img src="img/split.jpeg" alt=""></div>
+                    <h3>Split</h3>
+                    <div class="sottotitolo1">Subtitle</div>
+                </div>
+                <div class="square-1">
+                    <div class="square-img"><img src="img/cure.jpeg" alt=""></div>
+                    <h3>A cure for wellness</h3>
+                    <div class="sottotitolo1">Subtitle</div>
+                </div>
+                <div class="square-1">
+                    <div class="square-img"><img src="img/sinister.jpeg" alt=""></div>
+                    <h3>Sinister</h3>
+                    <div class="sottotitolo1">Subtitle</div>
+                </div>
+            </div>
+        </section>
+        <section class="creatoper">
+            <h2 class="doe"> Creato per John Doe</h2>
+            <div class="sottotitolo">Più ascolti, più accurati saranno i suggerimenti.</div>
+            <div class="brani-square-2">
+                <div class="square-2">
+                    <div class="square-img"><img src="img/radar.jpeg" alt=""></div>
+                    <h3>Release Radar</h3>
+                </div>
+                <div class="square-2">
+                    <div class="square-img"><img src="img/mixdaily.jpeg" alt=""></div>
+                    <h3>Daily Mix</h3>
+                </div>
+        </section>
+
         
     
     
     </main>
 
     <footer class="footer">
-        lorem ipsum dolor sit
+        <div class="foot">
+            <div class="left-foot">                
+                <div class="sinister"><img class="img-sinister" src="img/sinister.jpeg" alt=""></div>
+                <div class="name">
+                    <h3>Sinister</h3>
+                    <div class="sottotitolo">Brano Nome</div>                
+                </div>
+                <div class="icons-foot">
+                    <div class="icons-2"><i class="fa-regular fa-heart"></i></div>
+                    <div class="icons-2"><i class="fa-regular fa-folder"></i></div>    
+                </div>
+            </div>
+            <div class="center-foot">
+                <div class="icons-foot-center">
+                    <div class="icons-1"><i class="fa-solid fa-shuffle"></i></div>
+                    <div class="icons-1"><i class="fa-solid fa-caret-left"></i></div>    
+                    <div class="icons-1"><i class="fa-regular fa-circle-play"></i></div>
+                    <div class="icons-1"><i class="fa-solid fa-caret-right"></i></div>
+                    <div class="icons-1"><i class="fa-solid fa-arrow-rotate-right"></i></div>
+                </div>
+                <div class="left-foot sound-bar">
+                    <div class="text-bar">0:25</div>
+                    <div class="bar"></div>
+                    <div class="text-bar">4:35</div>
+                </div>
+            </div>
+            <div class="right-foot">
+                <div class="icons"><i class="fa-solid fa-list"></i></div>
+                <div class="icons"><i class="fa-solid fa-desktop"></i></div>
+                <div class="icons"><i class="fa-solid fa-volume-high"></i></div>
+                <div class="lil-bar"></div>
+
+            </div>
+            
+        </div>
     </footer>
     
 </body>
