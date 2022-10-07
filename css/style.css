@@ -12,6 +12,7 @@
     flex-direction: column;
     justify-content: space-between;
     color: grey;
+    z-index: 20;
 }
 .logo{
     display: none;
@@ -76,10 +77,16 @@
     flex-wrap: nowrap;
     align-items: center;
 }
+.home .ico{
+    border-left: 4px solid green;
+}
+.scroll{
+    height: calc(100vh -70px);
+    overflow-y: scroll;
+}
 .main{
     width: calc(100vw - 50px);
     height: calc(100vh - 120px);
-    overflow-y: scroll;
     position: fixed;
     top: 50px;
     right:0;
@@ -106,10 +113,15 @@
     font-size: 0.5rem;
     flex: 1 1 20%;
 }
+
+.genere .inev{
+    border-bottom: 4px solid green;
+}
+
 h2{
     color: white;
 }
-.recently,.doe{
+.recently,.doe,.popolari{
     margin:2rem 1rem;
 }
 
@@ -145,6 +157,7 @@ h2{
     align-items: baseline;
     gap: 1rem;
     margin-top: 3rem;
+    margin-left: 1rem;
 }
 
 .square-2{
@@ -159,9 +172,21 @@ h2{
 
 .sottotitolo1{
     color: grey;
+    margin: 1rem 1rem;
+}
+.circle-img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.circle-img img{
+    width: 100%;
 }
 
-
+h3{
+    margin-bottom: 1rem;
+}
 
 
 
@@ -171,7 +196,25 @@ h2{
     position: fixed;
     top: 0;
     right: 0;
-    background-color: blue;
+    background-color:black;
+    opacity: 0.5;
+    z-index: 10;
+
+}
+.bottone{
+    position: relative;
+
+}
+
+.btn{
+    font-size: .5rem; 
+    padding:1rem 4rem;
+    color: white;
+    border: 1px solid white;
+    border-radius: 50%;
+    position: absolute;
+    top: .2rem;
+    right: 0rem;
 }
 
 
@@ -188,6 +231,7 @@ h2{
     height: 70px;
     background-color: grey;
     color: white;
+    z-index: 20;
 }
 
 .left-foot{
@@ -237,10 +281,28 @@ h2{
 .text-bar{
     flex: 0 1 1rem;
 }
-.bar{
+.music-bar{
+    display: flex;
+    align-items: center;
+}
+.short{
+    border-bottom: 3px solid white;
+    width: 30px;
+    margin-left:0.5em;
+}
+.dot{
+    width: 8px;
+    height: 8px;
+    background-color: white;
+    border-radius: 50%;
+    display: none;
+}
+
+.long{
     border-bottom: 3px solid lightgray;
-    width: 50px;
-    margin:0 .5em;
+    width: 60px;
+    margin-right:0.5em;
+
 }
 .center-foot{
     display: flex;
@@ -278,6 +340,7 @@ h2{
     display: flex;
     flex: 0 1 30%;
     justify-content: flex-end;
+    align-items: center;
 
 }
 
@@ -378,7 +441,6 @@ h2{
         position: fixed;
         top: 0;
         right: 0;
-        background-color: blue;
     }
     
     .footer{
