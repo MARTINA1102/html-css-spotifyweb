@@ -122,7 +122,7 @@ h2{
     color: white;
 }
 .recently,.doe,.popolari{
-    margin:2rem 1rem;
+    margin:0 1rem;
 }
 
 .brani-square{
@@ -198,7 +198,6 @@ h3{
     right: 0;
     background-color:black;
     opacity: 0.5;
-    z-index: 10;
 
 }
 .bottone{
@@ -231,7 +230,7 @@ h3{
     height: 70px;
     background-color: grey;
     color: white;
-    z-index: 20;
+    position: fixed;
 }
 
 .left-foot{
@@ -284,11 +283,13 @@ h3{
 .music-bar{
     display: flex;
     align-items: center;
+    flex: 0 1 90%;
 }
 .short{
     border-bottom: 3px solid white;
-    width: 30px;
+    width: 400px;
     margin-left:0.5em;
+    flex-shrink: 1;
 }
 .dot{
     width: 8px;
@@ -296,12 +297,14 @@ h3{
     background-color: white;
     border-radius: 50%;
     display: none;
+    flex-shrink: 1;
 }
 
 .long{
     border-bottom: 3px solid lightgray;
-    width: 60px;
+    flex-basis: 800px;
     margin-right:0.5em;
+    flex-shrink: 1;
 
 }
 .center-foot{
