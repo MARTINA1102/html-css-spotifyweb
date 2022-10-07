@@ -172,7 +172,7 @@ h2{
 
 .sottotitolo1{
     color: grey;
-    margin: 1rem 1rem;
+    margin: .5rem 1rem;
 }
 .circle-img{
     width: 150px;
@@ -207,15 +207,20 @@ h3{
 
 .btn{
     font-size: .5rem; 
-    padding:1rem 4rem;
-    color: white;
-    border: 1px solid white;
-    border-radius: 50%;
+    padding:1rem 2rem;
+    color: grey;
+    border: 1px solid grey;
+    border-radius: 35%;
     position: absolute;
     top: .2rem;
-    right: 0rem;
+    right: .5rem;
 }
 
+.btn:hover{
+    color: white;
+    border: 1px solid white;
+
+}
 
 
 
@@ -287,7 +292,7 @@ h3{
 }
 .short{
     border-bottom: 3px solid white;
-    width: 400px;
+    width: 100px;
     margin-left:0.5em;
     flex-shrink: 1;
 }
@@ -296,13 +301,13 @@ h3{
     height: 8px;
     background-color: white;
     border-radius: 50%;
-    display: none;
     flex-shrink: 1;
+    display: none;
 }
 
 .long{
     border-bottom: 3px solid lightgray;
-    flex-basis: 800px;
+    flex-basis: 500px;
     margin-right:0.5em;
     flex-shrink: 1;
 
@@ -324,13 +329,24 @@ h3{
 }
 
 .lil-bar{
-    border-top: 3px solid lightgrey;
+    display: flex;
+    align-items: center;
+}
+.shortbar{
+    border-bottom: 3px solid white;
     width: 20px;
-    margin: 0 .3em;
+    margin-left:0.5em;
+    flex-shrink: 1;
+}
+.longbar{
+    border-bottom: 3px solid lightgray;
+    width: 50px;
+    margin-right:0.5em;
     flex-shrink: 1;
 
-
 }
+
+
 
 .name{
     font-size: .8rem;
@@ -346,6 +362,47 @@ h3{
     align-items: center;
 
 }
+.short:hover{
+    border-bottom: 3px solid green;    ;
+}
+.shortbar:hover{
+    border-bottom: 3px solid green;
+     
+}
+
+
+.play-1:hover{
+    color: white;
+    
+}
+.play:hover{
+    color: white;
+}
+.menu:hover{
+    color: white;
+}
+.installa-app:hover{
+    color: white;
+ 
+}
+.sottotitolo:hover{
+    color: white;
+    text-decoration: underline;
+}
+.icons-2:hover{
+    color:white ;
+}
+.genere li:hover{
+    color: white;
+}
+
+.dot:hover{
+    display: block;
+}
+
+
+
+
 
 @media (min-width: 639px){
     .navigation{
@@ -452,6 +509,23 @@ h3{
     
     
     }
+
+    .short{
+        border-bottom: 3px solid white;
+        width: 200px;
+        margin-left:0.5em;
+        flex-shrink: 1;
+    }
+   
+    
+    
+    .long{
+        border-bottom: 3px solid lightgray;
+        flex-basis: 600px;
+        margin-right:0.5em;
+        flex-shrink: 1;
+    
+    }
    
     
 
@@ -473,6 +547,21 @@ h3{
     .brani-square{
         justify-content: left;
     }
+    .short{
+        border-bottom: 3px solid white;
+        width: 400px;
+        margin-left:0.5em;
+        flex-shrink: 1;
+    }
+    
+    .long{
+        border-bottom: 3px solid lightgray;
+        flex-basis: 800px;
+        margin-right:0.5em;
+        flex-shrink: 1;
+    
+    }
+    
 }
     
 
@@ -485,6 +574,5 @@ h3{
     .square-1{
         flex: 1 1 1%;
     }
-   
     
 }
