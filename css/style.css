@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html{
+    font-family: 'Montserrat', sans-serif;
+}
+
 .navigation{
     width: 50px;
     height: calc(100vh - 70px);
@@ -149,11 +153,38 @@ h2{
 }
 .square-img{
     width: 150px;
+    position: relative;
+
    
 }
 .square-img img{
     width: 100%;
 }
+.sovrapposto{
+    display: none;
+}
+.square-img:hover .sovrapposto{
+    display: block;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0,0, 0.5);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+.sovrapposto i{
+    font-size: 50px;
+    text-align: center;
+
+}
+
 
 .brani-square-2{
     display: flex;
@@ -189,7 +220,7 @@ h2{
 }
 
 h3{
-    margin-top: 1rem;
+    margin-top: 0.5rem;
 }
 
 
@@ -201,7 +232,9 @@ h3{
     top: 0;
     right: 0;
     background-color:black;
-    opacity: 0.5;
+    opacity: 5;
+    z-index: 10;
+
 
 }
 .bottone{
@@ -211,12 +244,14 @@ h3{
 
 .btn{
     font-size: .5rem; 
-    padding:1rem 2rem;
-    color: grey;
-    border: 1px solid grey;
-    border-radius: 35%;
+    padding: .5rem;
+    width: 150px;
+    background-color: rgba(0, 0,0, 0.5);
+    color: rgb(173, 169, 169);
+    border: 1px solid rgb(173, 169, 169);
+    border-radius: 15px;
     position: absolute;
-    top: .2rem;
+    top: .5rem;
     right: .5rem;
 }
 
@@ -239,7 +274,7 @@ h3{
 .footer{
     width: 100vw;
     height: 70px;
-    background-color: grey;
+    background-color: rgb(48, 48, 48);
     color: white;
     position: fixed;
 }
@@ -254,8 +289,11 @@ h3{
 }
 
 .sinister{
-    flex: 0 0 70px;
+    flex: 0 1 70px;
     padding: .5rem;
+}
+.name{
+    flex: 0 1 50%;
 }
 .img-sinister{
     width: 100%;
@@ -298,22 +336,18 @@ h3{
 }
 .short{
     border-bottom: 3px solid white;
-    width: 100px;
+    width: 10px;
     margin-left:0.5em;
     flex-shrink: 1;
 }
 .dot{
-    width: 8px;
-    height: 8px;
-    background-color: white;
-    border-radius: 50%;
-    flex-shrink: 1;
+   
     display: none;
 }
 
 .long{
     border-bottom: 3px solid lightgray;
-    flex-basis: 500px;
+    width: 30px;
     margin-right:0.5em;
     flex-shrink: 1;
 
@@ -348,7 +382,7 @@ h3{
     border-bottom: 3px solid lightgray;
     width: 50px;
     margin-right:0.5em;
-    flex-shrink: 1;
+    flex-shrink: 0;
 
 }
 
@@ -368,42 +402,72 @@ h3{
     align-items: center;
 
 }
-.short:hover{
-    border-bottom: 3px solid green;    ;
-}
-.shortbar:hover{
+.music-bar:hover .short{
     border-bottom: 3px solid green;
-     
+    cursor: pointer;
 }
+.lil-bar:hover .shortbar{
+    border-bottom: 3px solid green;
+    cursor: pointer;
+
+}
+
 
 
 .play-1:hover{
     color: white;
-    
+    cursor: pointer;
+
 }
 .play:hover{
     color: white;
+    cursor: pointer;
+
 }
 .menu:hover{
     color: white;
+    cursor: pointer;
+
 }
 .installa-app:hover{
     color: white;
+    cursor: pointer;
+
  
 }
 .sottotitolo:hover{
     color: white;
     text-decoration: underline;
+    cursor: pointer;
+
 }
 .icons-2:hover{
     color:white ;
+    cursor: pointer;
+
 }
 .genere li:hover{
     color: white;
+    cursor: pointer;
+
 }
 
-.dot:hover{
+.sound-bar:hover .dot{
     display: block;
+    cursor: pointer;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+}
+.lil-bar:hover .dot{
+    display: block;
+    cursor: pointer;
+    width: 8px;
+    height: 8px;
+    background-color: white;
+    border-radius: 50%;
+
 }
 
 
@@ -518,19 +582,20 @@ h3{
 
     .short{
         border-bottom: 3px solid white;
-        width: 200px;
+        width: 100px;
         margin-left:0.5em;
         flex-shrink: 1;
+
     }
    
     
     
     .long{
         border-bottom: 3px solid lightgray;
-        flex-basis: 600px;
+        width: 200px;
         margin-right:0.5em;
         flex-shrink: 1;
-    
+
     }
    
     
@@ -555,16 +620,18 @@ h3{
     }
     .short{
         border-bottom: 3px solid white;
-        width: 400px;
+        width: 200px;
         margin-left:0.5em;
         flex-shrink: 1;
+
     }
     
     .long{
         border-bottom: 3px solid lightgray;
-        flex-basis: 800px;
+        flex-basis: 300px;
         margin-right:0.5em;
         flex-shrink: 1;
+
     
     }
     
